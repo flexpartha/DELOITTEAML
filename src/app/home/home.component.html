@@ -1,0 +1,96 @@
+<div id="divMain">
+<div id="secondPortionTop">
+    <div id="logoCaption">
+        <div id="left">
+            <img src="assets/images/amlLogo_2nd.png" width="60" height="42"> 
+        </div>
+        <div id="right">
+            <span>aml<b>Platform</b></span>
+        </div>
+    </div>
+    <div id="topRightNav">
+        <ul>
+            <li><a href="#">STARTTOUR</a></li>
+            <li><a href="#">OPTIONS</a></li>
+            <li><a href="#">CASE STUDIES</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li class="misle"><a href="#">ABOUTUS</a></li>
+        </ul>
+        <input type="button" id="loginBtn" value="LOGIN" class="inputTypeBtn" onclick="showLoginForm()">
+    </div>
+    <div id="inputDown">
+        <div id="notificatonArea">
+            <div class="showerrorLogin">
+                <span>please login with correct credential</span>
+            </div>
+            <img src="assets/images/arrow.png" class="arrow"/>
+        </div>
+        <span class="headTxt">
+            Existing User?
+            <div id="form">
+                <label>Enter your username here:</label>
+                <input type="text" id="userName" class="inputType inputTypeSign" onclick="disibleNotification()">
+                <label>Enter your password here:</label>
+                <input type="text" id="pwd" class="inputType inputTypeSign" onclick="disibleNotification()">
+                <div id="buttonGrp">
+                    <div id="registerBtn">
+                        <button type="button" class="btn btn-warning registerwrngBtn">REGISTER</button>
+                    </div>
+                    <div id="logonBtn">
+                        <button type="button" class="btn btn-success logonSuccessgBtn" onclick="login();">LOGON</button>
+                    </div>
+                </div>
+            </div>
+        </span>
+        
+    </div>
+</div>
+<br class="spacer"/>
+
+<div id="divMiddlecenter">
+    <span><span class="light">Speed through development with</span> <b>amlPlatform</b> <span class="light">services</span></span>
+    <div class="centerTxt">
+        <button type="button" class="btn btn-warning">GET STARTED</button>
+    </div>
+</div>
+</div>
+<div id="divCenter">
+    <div id="divLeft">
+       <img src="assets/images/amlLogo.png" width="100" height="77">
+    </div>
+    <div id="divRight">
+        <span>aml<b>Platform</b></span>
+    </div>
+    <br class="spacer"/>
+    <span class="spanLowerText">SPEED THROUGH DEVELOPEMENT</span>
+ </div>
+ <div id="divMidAfterLogin">
+    <div id="leftTop">
+        <div class="topLeft">
+            <span>new account</span>
+        </div>
+        <div class="topLeftmid">
+            <img src="assets/images/divider.png"/>
+        </div>
+        <div class="topLeft">
+            <span class="succTxt">successconfirmation</span>
+        </div>
+    </div>
+    <div id="divMiddle">
+        <div class="sign">
+            <img src="assets/images/sign.png">
+        </div>
+        <div class="congrtsTxt">
+            <span>Congratulations John!</span>
+        </div>
+        <div class="creatAccTxt">
+            <span>Your Account was Successfully created</span>
+        </div>
+        <div class="lowerTxt">
+            <span>Now let's get started with your keytasks.</span>
+        </div>
+        <div id="launchApps">
+            <button type="button" class="btn btn-warning" (click)="launchApplication()">LAUNCH APPLICATION</button>
+        </div>
+    </div>
+</div>

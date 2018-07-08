@@ -1,0 +1,106 @@
+<div class="" id="divDashboard">
+  <div class="cover-wrap">
+    <!--HEADER-->
+    <div>
+      <header class="header wow fadeIn">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+            <div class="navbar-left">
+              <img src="assets/images/amlLogo_small.png" class="DLogo" />
+              <span class="AmlTxt">amlPlatform </span>
+            </div>
+            <div class="navbar-badgeLeft">
+              <button type="button" class="btn btn-info btnInfo">
+                <i class="fa fa-envelope-o envelopeFont"></i>
+                <span class="badge bg-red">20</span>
+              </button>
+              <button type="button" class="btn btn-info btnInfo">
+                <i class="fa fa fa-bell envelopeFont"></i>
+                <span class="badge bg-yellow">10</span>
+              </button>
+              <button type="button" class="btn btn-info btnInfo">
+                <i class="fa fa-tasks envelopeFont"></i>
+                <span class="badge bg-green">20</span>
+              </button>
+            </div>
+            <div class="navbar-badgeright">
+              <div class="btn-group selectDropdwn">
+                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Project</a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:void(0)">Action</a></li>
+                  <li><a href="javascript:void(0)">Another action</a></li>
+                </ul>
+              </div>
+              <i class="fa fa-search fasearchIcon"></i>
+              <input type="text" class="inputSearch">
+              <div class="rightUser">
+                <i class="fa fa-user faUser"></i>
+                <span class="rightUserTxt">John Keri</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- this is lower header -->
+        <!--<div class="header-lower">
+          <span><i class="glyphicon glyphicon-tasks side-toogle glyphIconlg"></i>PROJECTS</span>
+        </div>-->
+      </header>
+    </div> <!--HEADER ends-->
+
+
+    <main class="app">
+
+      <!--aside nav menu starts-->
+      <div class="aside wow fadeIn">
+        <nav id="sidebar">
+            <ul class="list-unstyled components" id="toggleBar">
+                <li>
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="topToggle">
+                    Home
+                  </a>
+                  <ul class="collapse list-unstyled collapse show typeToggle typeCont" id="homeSubmenu" style="margin-left:27px;">
+                      <li><a href="#"><i class="fa fa-dashboard iconSpace"></i>DashBoard</a></li>
+                      <li><a href="#"><i class="fa fa-windows iconSpace"></i>Applications</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="topToggle">
+                      App Services
+                  </a>
+                  <ul class="collapse list-unstyled collapse  typeToggle typeCont" id="pageSubmenu" style="margin-left:27px;">
+                      <li><a href="#"><i class="fa fa-desktop iconSpace"></i>Screens</a></li>
+                      <li><a href="#"><i class="fa fa fa-bell iconSpace"></i>Data models</a></li>
+                      <li><a href="#"><i class="fa fa-cloud iconSpace"></i>Cloud calls</a></li>
+                      <li><a href="#"><i class="fa fa fa-bell iconSpace"></i>Workflow</a></li>
+                      <li><a href="#"><i class="fa fa fa-bell iconSpace"></i>Notification</a></li>
+                      <li><a href="#"><i class="fa fa fa-bell iconSpace"></i>Forms</a></li>
+                      <li><a href="#"><i class="fa fa-bar-chart iconSpace"></i>Analytics</a></li>
+                      <li><a href="#"><i class="fa fa-cog iconSpace"></i>Settings</a></li>
+                      <li><a href="#"><i class="fa fa fa-bell iconSpace"></i>Security</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="topToggle">
+                      Addministration
+                  </a>
+                  <ul class="collapse list-unstyled collapse  typeToggle typeCont" id="pageSubmenu1" style="margin-left:27px;">
+                      <li><a href="#"><i class="fa fa-user iconSpace"></i>User</a></li>
+                      <li><a href="#"><i class="fa fa-cog iconSpace"></i>Settings</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+
+      </div> <!--aside nav menu ends-->
+
+      <!--main content-->
+      <div id="divMainContent" class="main-content wow fadeIn flash-loader">
+          <div>
+            <router-outlet></router-outlet>
+          </div>
+      </div> <!--main content ends-->
+    </main> <!--main app ends-->
+
+  </div>
+</div>
